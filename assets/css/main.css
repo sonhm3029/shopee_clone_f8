@@ -1,0 +1,198 @@
+/* Header CSS */
+.header {
+    background-image: linear-gradient(0,#fe6132, #f6412d);
+    height: 120px;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    position: fixed;
+    width: 100%;
+}
+
+/* Header navbar */
+.header__navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.navbar__nav {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    height: 3.4rem;
+}
+
+.nav-link,
+.nav-item {
+    font-weight: 400;
+    padding: 0px 7px;
+    display: inline-block;  
+    list-style: none;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+
+
+.none-hover {
+    opacity: 1!important;
+}
+.nav-item:hover .nav-link {
+    opacity: 0.7;
+}
+
+.nav-link {
+    padding: 0px;
+}
+
+.nav-item__boundary {
+    border-right: 2px solid hsla(0,0%,100%,.22);
+}
+
+
+
+
+/* Header QR */
+.qr {
+    position: relative;
+}
+
+/* .qr::before {
+    position: absolute;
+    content: "";
+    background-color: red;
+    height: 12px;
+    width: 100%;
+    top: 16px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+} */
+
+.qr:hover .nav-link__qr {
+    display: block;
+}
+
+.qr-container {
+    position: absolute;
+    height: 20px;
+}
+
+.nav-link__qr {
+    background-color: var(--white-color);
+    width: 18.4rem;
+    height: 21.4rem;
+    /* position: absolute; */
+    margin-top: 1rem;
+    /*   */
+    top: 150%;
+    padding: 0px 2px;
+    display: none;
+}
+
+
+
+.nav-link__qr > img {
+    width: 18rem;
+    height: 18rem;
+    text-align: center;
+}
+
+
+
+.download_page {
+    display: flex;
+    /* justify-content: space-around; */
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.app_store, .google_play {
+    height: 1.8rem;
+    width: 7rem;
+}
+
+
+.app_store{
+    margin-right: 8px;
+}
+
+
+
+.nav-link__facebook {
+    font-size: 1.6rem;
+}
+.nav-link__instagram {
+    font-size: 1.6rem;
+}
+
+
+.nav-item + .nav-item__community {
+    padding-left: 0px;
+}
+
+.nav-link__instagram, .nav-link__facebook {
+    margin-right: 1rem;
+}
+
+.nav-item__noti {
+    font-size: 1.6rem;
+}
+.nav-item__help {
+    font-size: 1.6rem;
+}
+
+/* Shopee popup overlay */
+
+.shopee-popup__overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s;
+}
+
+.shopee-popup__container {
+    position: absolute;
+    width: 34.8rem;
+    height: 43.6rem;
+}
+
+.shopee-popup__container .popup_img {
+    width: 100%;
+    height:inherit;
+}
+
+.shopee-popup__close-btn {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid rgba(255, 255, 255, 0);
+    justify-content: center;
+    align-items: center;
+    transform: translate(45%, -45%);
+}
+
+.shopee-popup__close-btn i {
+    flex: 1;
+    font-size: 3rem;
+    color: var(--white-color);
+}
+
+.shopee-popup__close-btn:hover {
+    cursor: pointer;
+}
+
+
+/* End shopee popup overlay */
+
