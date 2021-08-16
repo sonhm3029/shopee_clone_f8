@@ -7,6 +7,7 @@
     color: var(--white-color);
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 /* Header navbar */
@@ -253,6 +254,7 @@
     transition: opacity 0.5s;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 
@@ -262,6 +264,7 @@
     margin:auto ;
     width: 34.8rem;
     height: 43.6rem;
+    z-index: 9999999999999999999;
 }
 
 .shopee-popup__container .popup_img {
@@ -456,7 +459,7 @@
     box-shadow: 0 1px 3.125rem 0 rgb(0 0 0 / 20%);
     border-radius: .125rem;
     transform-origin: calc(100% - 30px) top; 
-    z-index: 999999;
+    z-index: 2;
 }
 
 /* add arrow tool tips */
@@ -553,6 +556,7 @@
     margin-bottom: 16px;
     color: var(--black-color-rgba);
     padding-top:var(--header-height);
+    /* margin: 0px 20px; */
 }
 
 .breadcrumb {
@@ -569,11 +573,11 @@
 .jumbotron__image {
     margin-left:auto;
     margin-right:auto;
-    width: 100%;
+    width: inherit
 }
 
 .jumbotron__image img {
-    width: 100%;
+    width: inherit;
 }
 
 /* End jumbotron */
