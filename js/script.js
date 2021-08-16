@@ -43,11 +43,43 @@ $(function() {
             $(this).removeClass("active");
         })
     }
-    
+
+    /*   active button in sort bar   */
+
+    function selectButton() {
+        let list_button = document.querySelectorAll(".sort-bar__sort-by-options > .basic-btn");
+        for( var i = 0; i< list_button.length; i++) {
+            list_button[i].onclick = function() {
+                let arr_button = Array.prototype.slice.call(list_button);
+                let button_index = arr_button.indexOf(this);
+                activeButton(button_index,list_button);
+            }
+        }
+
+    }
+
+    function activeButton(index, list_button) {
+        for(var i = 0; i <list_button.length; i++) {
+
+            var btn_className = list_button[i].className;
+            if(i == index) {
+                list_button[i].className += " basic-btn--active";
+            }
+            else {
+                if(btn_className.includes(" basic-btn--active")) {
+                    list_button[i].className = btn_className.replace(/ basic-btn--active/g,"");
+                }
+            }
+        }
+    }
+
+
+
 
 
 
     /*          call function        */
     close_popup();
     open_user_menu();
+    selectButton();
 });

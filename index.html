@@ -626,6 +626,17 @@
                         <button class="basic-btn basic-btn--active">Phổ Biến</button>
                         <button class="basic-btn">Mới Nhất</button>
                         <button class="basic-btn">Bán Chạy</button>
+                        <button class="basic-btn sort-price__btn">
+                            <span>Giá</span>
+                            <div class="sort-price__filter">
+                                <div class="up-price__filter">
+                                    <i class="fas fa-angle-up"></i>
+                                </div>
+                                <div class="down-price__filter">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </button>
                         <div class="dropdown-option">
                             <button class="dropdown-option__dropdown-btn basic-btn">
                                 <span>Giá</span>
@@ -636,9 +647,26 @@
                                 <li class="dropdown-option__dropdown-item">Giá: Cao đến Thấp</li>
                             </ul>
                         </div>
+                        <div class="sort-bar__pagination">
+                            <div class="pagination__number">
+                                <span class="pagination__number-current-page">1</span>
+                                    /
+                                <span class="pagination__number-all-page">2</span>
+                            </div>
+                            <div class="pagination__btn-group">
+                                <a href="" class="pagination__group-item pagination_btn-previous">
+                                    <i class="fas fa-angle-left"></i>
+                                </a>
+                                <a href="" class="pagination__group-item pagination_btn-next">
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="product-list__search-result"></div>
+                <div class="product-list__search-result">
+                    
+                </div>
             </div>
         </div>
         <footer class="footer"></footer>
