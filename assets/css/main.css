@@ -444,6 +444,7 @@
     font-size: 30px;
 }
 
+
 /* shopee cart notify */
 .shopee-cart__notify {
     visibility: hidden;
@@ -573,11 +574,11 @@
 .jumbotron__image {
     margin-left:auto;
     margin-right:auto;
-    width: inherit
+    width: 100%
 }
 
 .jumbotron__image img {
-    width: inherit;
+    width: 100%;
 }
 
 /* End jumbotron */
