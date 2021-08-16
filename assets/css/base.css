@@ -1,8 +1,14 @@
 :root {
+    --primary-color: #ee4d2d;
     --white-color: #ffffff;
     --black-color: #000000;
     --text-color: #333;
-
+    --black-color-rgba: rgba(0,0,0,0.7);
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --white-color-hsla: hsla(0,0%,100%,.9);
+    --basic-box-shadow: 0 1px 3.125rem 0 rgb(0 0 0 / 20%);
+    --background-image-linear: linear-gradient(0,#fe6132, #f6412d);
 }
 
 
@@ -33,3 +39,33 @@ html {
     display: flex;
     flex-wrap: wrap;
 }
+
+
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+@keyframes zooming {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+

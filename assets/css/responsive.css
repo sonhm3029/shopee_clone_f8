@@ -1,0 +1,71 @@
+/*  */
+@media (max-width:842px) {
+    .header__navbar, .header-sub-navbar {
+        display: none;
+    }
+
+    .header-with-search {
+        padding-top: 28px;
+    }
+
+    :root {
+        --header-height: 90px;
+        --navbar-height: 0px
+    }
+
+    .shopee-cart, .shopee-user {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .header-with-search__logo-section {
+        padding-right: 20px;
+    }
+
+    .shopee-cart:after {
+        right: 30%;
+    }
+
+    .breadcrumb {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .shopee-cart__notify {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: calc(var(--header-height) - 10px);
+        height: 150px;
+        font-size: 1rem;
+    }
+    .shopee-cart:after {
+        border-width: 10px;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .notify-image img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .shopee-cart__notify {
+        height: 100px;
+        font-size: 1rem;
+    }
+
+    .breadcrumb {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 1200px) {
+
+
+}
