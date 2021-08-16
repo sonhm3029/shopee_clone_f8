@@ -310,6 +310,7 @@
 
 .header-with-search__logo-section {
     padding-right: 40px;
+    flex: 1.5;
 }
 .shopee-logo-icon {
     width: 162px;
@@ -317,10 +318,11 @@
     fill: #fff;
 }
 
-/* end shopee logo */
-.header-width-search__logo-section {
-    flex: 1.5;
+.shopee-logo__link {
+    display: inline-block;
 }
+
+/* end shopee logo */
 
 .header-with-search__search-section {
     flex: 6;
@@ -412,6 +414,11 @@
 
 /* End header sub nav */
 
+.header-with-search__user-section {
+    flex: 2;
+    display: flex;
+}
+
 
 /* Shopee cart */
 .shopee-cart, .shopee-user {
@@ -458,7 +465,7 @@
     visibility: hidden;
     position: absolute;
     bottom: 10%;
-    right: 40%;
+    right: 42%;
     content: "";
     border-width: 10px;
     border-style: solid;
@@ -515,8 +522,8 @@
     top: var(--header-height);
     bottom: 0;
     background-color: var(--primary-color);
-    width: 320px;
-    position: absolute;
+    width: 240px;
+    position: fixed;
     transform: translateX(100%) ;
     transition: transform 1s;
 }
@@ -543,8 +550,8 @@
 /*                      MAIN CONTENT                        */
 
 .jumbotron {
+    margin-bottom: 16px;
     color: var(--black-color-rgba);
-    height: 360px;
     padding-top:var(--header-height);
 }
 
@@ -568,3 +575,218 @@
 .jumbotron__image img {
     width: 100%;
 }
+
+/* End jumbotron */
+
+
+/* Product list */
+
+.container {
+    display: flex;
+    background-color: rgba(0,0,0,0.01) ;
+}
+/* Filter panel */
+.filter-panel {
+    flex: 1;
+    min-height: 500px;
+    margin-right: 20px;
+    padding-left: 12px;
+}
+
+
+.shopee-search-filter-status {
+    display: flex;
+    height: 30px;
+    align-items: center;
+}
+.shopee-search-filter-status__icon {
+    width: 24px;
+    font-size: 12px;
+}
+
+.shopee-search-filter-status__icon i {
+    margin-right: 10px;
+}
+.shopee-search-filter-status__text {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.shopee-filter-group {
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(0,0,0,.09);
+}
+
+.shopee-facet-filter {
+
+}
+.shopee-location-filter {
+
+}
+.shopee-logistic-filter {
+
+}
+.shopee-brand-filter {
+
+}
+.shopee-price-range-filter {
+
+}
+.shopee-rates-filter {
+
+}
+
+.shopee-rates-filter .shopee-filter-group__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.shopee-shop-type-filter {
+
+}
+.shopee-product-status-filter {
+
+}
+
+
+.shopee-filter-group__item {
+    display: flex;
+    align-items: flex-start;
+    padding: 8px 0px;
+    font-size: 1.4rem;
+    color: rgba(0,0,0,0.6);
+    font-weight: 500;
+}
+
+.shopee-filter-group__header {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: rgba(0,0,0,0.6);
+    font-weight: 500;
+}
+
+.shopee-filter-group__body {
+
+}
+
+.group-item__check-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 24px;
+    height: 100%;
+    margin-right: 5px;
+}
+
+.group-item__price-input {
+    display: flex;
+    align-items: center;justify-content: space-between;
+}
+
+.group-item__price-input .group-item__input {
+    width: 80px;
+    height: 30px;
+    text-transform: uppercase;
+    border-radius: .125rem;
+    box-shadow: inset 0 1px 0 0 rgb(0 0 0 / 5%);
+    background-color: #fff;
+    outline: none;
+    border: 1px solid rgba(0,0,0,.26);
+}
+
+.group-item__range-line {
+    flex: 1;
+    height: 1px;
+    width: 10px;
+    background: #bdbdbd;
+    margin: 0rem 1rem;
+}
+.group-item__input {
+    margin-top: 1.5px;
+}
+
+.shopee-filter__apply-btn {
+    margin-top: 20px;
+}
+
+
+/* End filter panel */
+
+.product-list {
+    flex:5;
+    min-height: 500px;
+}
+
+/* Sort bar */
+.product-list__sort-bar {
+    background-color: rgba(0,0,0,.03);
+    width: 100%;
+    border-radius: 2px;
+    display: flex;
+    padding: 1.3rem 2rem;
+    font-size: 1.4rem;
+    color: #555;
+    align-items: center;
+}
+
+.sort-bar__label {
+    margin-right: 5px;
+}
+
+.sort-bar__sort-by-options {
+    display: flex;
+}
+
+
+.sort-bar__sort-by-options .basic-btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    min-width: 100px;
+}
+/* end sort bar */
+
+/* drop down option for price */
+.dropdown-option {
+    position: relative;
+}
+
+.dropdown-option__dropdown-btn{
+    padding-left: 8px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.dropdown-option__dropdown-menu {
+    position: absolute;
+    top: 100%;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    margin: 0px 0px 0px 10px;
+    width: calc(100% - 10px);
+    box-shadow: 0 0.3125rem 0.625rem 0 rgb(0 0 0 / 5%);
+    border-radius: 2px;
+    border-top: 2px solid rgba(0,0,0,.03);
+    display: none;
+}
+
+.dropdown-option__dropdown-item {
+    display: block;
+    flex: 1;
+    padding: 8px;
+}
+
+.dropdown-option:hover .dropdown-option__dropdown-menu {
+    display: flex;
+}
+
+.dropdown-option__dropdown-item:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+/* end drop down option */

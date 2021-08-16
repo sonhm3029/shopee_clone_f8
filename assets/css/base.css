@@ -2,6 +2,8 @@
     --primary-color: #ee4d2d;
     --white-color: #ffffff;
     --black-color: #000000;
+    --yellow-color: yellow;
+    --star-color: #ffce3d;
     --text-color: #333;
     --black-color-rgba: rgba(0,0,0,0.7);
     --header-height: 120px;
@@ -47,6 +49,31 @@ html {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
+}
+
+.basic-btn {
+    color: #555;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--white-color);
+    font-weight: 400;
+    font-size: 1.4rem;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 9%);
+    border-radius: 2px;
+    padding: 8px 16px;
+    width: 100%;
+}
+
+.basic-btn--active {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.solid-star {
+    color: var(--star-color);
+    font-size: 1.4rem;
+    margin-right: 0.4rem;
 }
 
 /* clears the ‘X’ from Internet Explorer */

@@ -23,7 +23,7 @@
     }
 
     .shopee-cart:after {
-        right: 30%;
+        right: 10%;
     }
 
     .breadcrumb {
@@ -49,6 +49,10 @@
 }
 
 @media (max-width: 480px) {
+
+    :root {
+        --header-height: 90px;
+    }
     .notify-image img {
         width: 50px;
         height: 50px;
@@ -61,6 +65,45 @@
 
     .breadcrumb {
         font-size: 1rem;
+    }
+
+    .header-with-search {
+        padding-top: 24px;
+        justify-content: space-between;
+    }
+
+    .shopee-logo-icon {
+        width: 140px;
+        height: 40px;
+    }
+    .header-with-search__logo-section {
+        padding-right: 0px;
+        width: 152px;   
+    }
+
+    .header-with-search__search-section {
+        display: none;
+    }
+
+    .header-with-search__user-section {
+        width:152px;
+        flex: 0;
+    }
+    .shopee-cart, .shopee-user {
+        padding-bottom: 7px;
+    }
+
+    .shopee-cart__icon,
+    .shopee-cart__icon i,
+    .shopee-user__icon,
+    .shopee-user__icon i {
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+    }
+
+    .shopee-cart:after {
+        right: 5%;
     }
 }
 
