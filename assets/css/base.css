@@ -137,13 +137,13 @@ html {
 
 @media (max-width: 400px) {
 
-    .grid {
+    /* .grid {
         max-width: 300px;
     }
 
     .jumbotron.grid {
         width: 100%;
-    }
+    } */
 
     .col-xs-1 {
         flex: 0 0 8.33333%;
