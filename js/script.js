@@ -44,12 +44,18 @@ $(function() {
         })
     }
 
-    /*   active button in sort bar   */
+    /*   active button in sort bar and pagination bottom   */
 
-    function selectButton() {
-        let list_button = document.querySelectorAll(".sort-bar__sort-by-options > .basic-btn");
+    let sort_bar_list_btn = document.querySelectorAll(".sort-bar__sort-by-options > .basic-btn");
+    let pagination_bottom_btn = document.querySelectorAll(".shopee-bottom__page-number")
+
+    console.log(pagination_bottom_btn);
+
+    function selectButton(list_button) {
+        // let list_button = document.querySelectorAll(".sort-bar__sort-by-options > .basic-btn");
         for( var i = 0; i< list_button.length; i++) {
             list_button[i].onclick = function() {
+                console.log("i be clicked");
                 let arr_button = Array.prototype.slice.call(list_button);
                 let button_index = arr_button.indexOf(this);
                 activeButton(button_index,list_button);
@@ -81,5 +87,6 @@ $(function() {
     /*          call function        */
     close_popup();
     open_user_menu();
-    selectButton();
+    selectButton(sort_bar_list_btn);
+    selectButton(pagination_bottom_btn)
 });

@@ -1,5 +1,10 @@
 
 /*                         HEADER CSS                       */
+
+.app {
+
+    position: relative;
+}
 .header {
     background-image: var(--background-image-linear);
     height: var(--header-height);
@@ -585,10 +590,13 @@
 
 
 /* Product list */
+.wrap {
+    background-color: rgba(0,0,0,0.04) ;
+}
 
 .container {
     display: flex;
-    background-color: rgba(0,0,0,0.04) ;
+    /* background-color: rgba(0,0,0,0.04) ; */
     background-clip: content-box;
 }
 /* Filter panel */
@@ -792,6 +800,7 @@
     border-radius: 2px;
     border-top: 2px solid rgba(0,0,0,.03);
     display: none;
+    z-index: 1;
 }
 
 .dropdown-option__dropdown-item {
@@ -1082,3 +1091,223 @@
 
 
 /* end product list search result */
+
+/* Pagination */
+
+
+.shopee-bottom-pagination {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.shopee-bottom-pagination button {
+    margin-right: 10px;
+    padding: 8px 32px;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    color: rgba(0,0,0,.4);
+    cursor: pointer;
+}
+
+.shopee-bottom__page-number > a,
+.shopee-bottom-pagination__previous-btn > a,
+.shopee-bottom-pagination__next-btn > a {
+    text-decoration: none;
+    color: inherit
+}
+
+
+/* End pagination */
+
+/* Footer */
+.footer {
+    /* position: absolute; */
+    width: 100%;
+    bottom: 0;
+    z-index: 0;
+}
+
+
+.shopee-footer__boundary {
+    height: 120px;
+    border-top: 4px solid var(--primary-color);
+    
+}
+
+.white-space>hr {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.shopee-about {
+    padding-top: 50px;
+    background-color: #fbfbfb;
+    display: flex;
+}
+
+.shopee-about__section {
+    flex: 1;
+}
+
+.shopee-about__section-header {
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+}
+
+.shopee-about__section-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.shopee-about__section-content__item {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-transform: capitalize;
+}
+
+
+.shopee-about__section-content__item:hover .shopee-about__link {
+    color: var(--primary-color);
+}
+.shopee-about__link {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#facebook, #instagram, #linkedin {
+    display: flex;
+    align-items: center;
+}
+
+#facebook i, #instagram i, #linkedin i {
+    font-size: 1.8rem;
+    margin-right: 8px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+.install-method {
+    flex-direction: row;
+}
+
+#install-qrcode, #install-store {
+    margin-right: 8px;
+    width: 86px;
+    height: 86px;
+}
+
+.shopee-about__link > img {
+    width: 100%;
+}
+
+#install-qrcode img {
+    border: 0.1rem solid rgba(0,0,0,.09);
+}
+
+#install-store {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.shopee-version {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+}
+
+.shopee-version__copyright {
+    
+}
+
+.shopee-version__country {
+    display: flex;
+}
+
+.shopee-version__country__item {
+    text-transform: capitalize;
+    padding: 0px 5px;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.shopee-version__country-link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.shopee-version__country__item:last-child {
+    border: none;
+}
+
+.shopee-policy {
+    background-color: rgba(0, 0, 0, 0.04);
+    padding-bottom: 50px;
+}
+
+.shopee-policy__list-policy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 42px;
+    padding-bottom: 37px;
+}
+
+.shopee-policy__item {
+    padding: 0px 24px;
+    font-size: 1.4rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+ 
+}
+.shopee-policy__item:last-child {
+    border: none;
+}
+
+.policy-link {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5) ;
+    text-decoration: none;
+}
+
+.shopee-policy__registered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+}
+
+.shopee-policy__registered .shopee-policy__item {
+    padding: 0px 12px;
+    border: none;
+}
+
+
+.shopee-company-name, .shopee-addition-info {
+    margin-top: 8px;
+    
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.shopee-company-name {
+    margin-bottom: 25px;
+}
+
+/* end */

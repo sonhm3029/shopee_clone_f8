@@ -46,11 +46,13 @@ html {
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 9%);
     border-radius: 2px;
     padding: 8px 16px;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 .basic-btn--active {
-    color: white;
-    background-color: var(--primary-color);
+    color: white!important;
+    background-color: var(--primary-color)!important;
 }
 
 .solid-star {
@@ -179,6 +181,16 @@ html {
         flex: 0 0 100%;
         max-width:  100%;
     }
+
+    .hidden-xs {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .hidden-sm {
+        display: none;
+    }
 }
 
 /*           small       */
@@ -222,6 +234,10 @@ html {
     .col-sm-12 {
         flex: 0 0 100%;
         max-width:  100%;
+    }
+
+    .hidden-sm {
+        display: none;
     }
 
     

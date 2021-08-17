@@ -66,6 +66,16 @@
     .sort-bar__pagination {
         display: none;
     }
+
+    .shopee-about {
+        flex-wrap: wrap;
+    }
+
+    .shopee-about__section {
+        flex-basis: 50%;
+    }
+
+    
 }
 
 @media (max-width: 567px) {
@@ -184,6 +194,27 @@
     .container.grid {
         padding-left: 4px;
         padding-right: 4px;
+    }
+
+    .shopee-bottom-pagination > button {
+        padding: 4px 8px;
+    }
+
+    .shopee-policy__list-policy {
+        flex-direction: column;
+    }
+
+    .shopee-policy__item {
+        text-align: center;
+        margin-bottom: 16px;
+        border: none;
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .shopee-version__country {
+        display: none;
     }
 }
 
